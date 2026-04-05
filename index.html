@@ -1,30 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
- <meta charset="UTF-8" />
- <meta name="viewport" content="width=device-width, initial-scale=1.0" />
- <title>Welcome | REALTLD</title>
- <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>REALTLD | Autonomous Swarm Services</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- PayPal SDK -->
+    <script src="https://www.paypal.com/sdk/js?client-id=BAABbe5bgI0NioYv64siihaR2sooYDW7ofpR7h1BpDKUGngNoFp6RX0KbXBZwgNV2TovnnG7dzNY1_SacI&components=hosted-buttons&enable-funding=venmo&currency=USD"></script>
 </head>
 <body>
- <div class="page-wrap">
- <div class="hero">
- <div class="hero-overlay"></div>
- <div class="hero-content">
- <img class="logo" src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?auto=format&fit=crop&w=300&q=80" alt="RealTLD" />
- <h1>Discover REALTLD</h1>
- <p>Join our exclusive early access list and explore the future of premium domains.</p>
- <form id="join-form" class="optin-form">
- <label for="email">Enter your email to join:</label>
- <div class="field-row">
- <input type="email" id="email" name="email" placeholder="you@example.com" required />
- <button type="submit">Join Here</button>
- </div>
- <p class="note">We’ll send your request to <strong>4clickpro@gmail.com</strong> and redirect you to <strong>realtld.com</strong>.</p>
- </form>
- </div>
- </div>
- </div>
- <script src="script.js"></script>
+    <div class="page-wrap">
+        <h1>REALTLD Agent Swarm Services</h1>
+        
+        <div class="pricing-container">
+            <!-- Starter -->
+            <div class="tier">
+                <h2>Starter (Pilot) - $199/mo</h2>
+                <div id="paypal-container-X28LUJDV8BVMG"></div>
+                <script>
+                    paypal.HostedButtons({
+                        hostedButtonId: "X28LUJDV8BVMG",
+                    }).render("#paypal-container-X28LUJDV8BVMG")
+                </script>
+            </div>
+            <!-- Pro/Enterprise placeholders would go here -->
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
